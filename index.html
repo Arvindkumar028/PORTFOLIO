@@ -5,130 +5,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arvindkumar D | Senior SDET & QA Automation Consultant</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Ambient Glow Backgrounds -->
+  <div class="glow-sphere glow-1"></div>
+  <div class="glow-sphere glow-2"></div>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">Arvindkumar.D</a>
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>Arvindkumar.D <span class="logo-role">/ SDET</span><span class="logo-bracket">&gt;</span>
+      </a>
       <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact" class="btn-sm">Contact</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Tech Stack</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#certifications" class="nav-item">Credentials</a></li>
+          <li><a href="#contact" class="btn-contact">Let's Talk</a></li>
         </ul>
       </nav>
+      <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section class="hero" id="about">
-      <div class="container hero-content">
-        <div class="hero-badge"><i class="fa-solid fa-code-branch"></i> Senior SDET / QA Automation Consultant</div>
-        <h1>Architecting Reliable Automation & High-Performance Test Suites</h1>
-        <p class="hero-subtext">
-          Senior SDET with 5+ years of experience across banking, fintech, and microservices-based architectures. Specializing in scalable test automation frameworks, API security testing, and CI/CD quality gates.
-        </p>
-        
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
-          <a href="https://github.com/Arvind" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+      <div class="container hero-layout">
+        <div class="hero-text">
+          <div class="status-pill">
+            <span class="pulse-dot"></span> Available for Senior SDET Roles & Consulting
+          </div>
+          <h1 class="hero-heading">
+            Engineering <span class="gradient-text">Bulletproof</span> Test Automation & Resilient Architectures.
+          </h1>
+          <p class="hero-bio">
+            Senior SDET with 5+ years of experience across fintech, banking, and microservices environments[cite: 1]. Specializing in designing zero-flakiness frameworks, API security suites, and high-speed CI/CD testing pipelines[cite: 1].
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Case Studies</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="https://github.com/Arvindkumar028" target="_blank" class="btn btn-glass">
+              <i class="fa-brands fa-github"></i> <span>GitHub</span>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-solid fa-envelope"></i> <span>Contact</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Metric Cards -->
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h3>85%</h3>
-            <p>Manual Effort Reduction</p>
+        <!-- Live Metrics Grid -->
+        <div class="stats-card-container">
+          <div class="stat-box">
+            <div class="stat-number gradient-text">85%</div>
+            <div class="stat-label">Manual Effort Eliminated[cite: 1]</div>
           </div>
-          <div class="stat-card">
-            <h3>5d → 2d</h3>
-            <p>Regression Cycle Speedup</p>
+          <div class="stat-box">
+            <div class="stat-number gradient-text">5d → 2d</div>
+            <div class="stat-label">Regression Cycle Turnaround[cite: 1]</div>
           </div>
-          <div class="stat-card">
-            <h3>86%</h3>
-            <p>Release Turnaround Boost</p>
+          <div class="stat-box">
+            <div class="stat-number gradient-text">86%</div>
+            <div class="stat-label">Release Efficiency Gain[cite: 1]</div>
           </div>
-          <div class="stat-card">
-            <h3>5+ Years</h3>
-            <p>Quality Engineering Experience</p>
+          <div class="stat-box">
+            <div class="stat-number gradient-text">5+ Yrs</div>
+            <div class="stat-label">Quality Engineering Experience[cite: 1]</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technical Skills Section -->
+    <!-- Skills Section -->
     <section class="section" id="skills">
       <div class="container">
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+        <div class="section-header">
+          <span class="section-subtitle">CAPABILITIES</span>
+          <h2 class="section-title">Technical Toolchain & Frameworks</h2>
+        </div>
+
+        <div class="skills-card-grid">
+          <div class="glass-card skill-card">
+            <div class="card-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
             <h3>Test Automation</h3>
-            <p>Selenium WebDriver, REST Assured, WinApp Driver, JUnit, TestNG, Cucumber BDD, Gauge BDD</p>
+            <p>Selenium WebDriver, REST Assured, WinApp Driver, JUnit, TestNG, Cucumber BDD, Gauge BDD[cite: 1]</p>
+            <div class="skill-pills">
+              <span>Selenium</span><span>REST Assured</span><span>Cucumber</span><span>TestNG</span>
+            </div>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+
+          <div class="glass-card skill-card">
+            <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
             <h3>API & Performance</h3>
-            <p>Postman, JMeter, System Integration Testing (SIT), End-to-End Validation, API Security</p>
+            <p>Postman, JMeter, System Integration Testing (SIT), End-to-End Validation, API Security[cite: 1]</p>
+            <div class="skill-pills">
+              <span>Postman</span><span>JMeter</span><span>SIT</span><span>E2E</span>
+            </div>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
-            <h3>Languages & Tools</h3>
-            <p>Java, TypeScript, Jenkins, Maven, Gradle, Git, Bitbucket, JIRA, Docker, AWS Step Functions & SSM</p>
+
+          <div class="glass-card skill-card">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Languages & CI/CD</h3>
+            <p>Java, TypeScript, Jenkins, Maven, Gradle, Git, Bitbucket, Docker, AWS Step Functions & SSM[cite: 1]</p>
+            <div class="skill-pills">
+              <span>Java</span><span>Jenkins</span><span>Docker</span><span>AWS</span>
+            </div>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <h3>Mobile & Cloud Testing</h3>
-            <p>LambdaTest (Cloud Cross-Browser & OS Execution), PostgreSQL, MySQL, AI Tooling (Copilot, Ollama)</p>
+
+          <div class="glass-card skill-card">
+            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Mobile, OS & AI Tools</h3>
+            <p>LambdaTest (Cloud Automation), PostgreSQL, MySQL, JIRA, Copilot, Ollama, Devin[cite: 1]</p>
+            <div class="skill-pills">
+              <span>LambdaTest</span><span>SQL</span><span>JIRA</span><span>AI Tools</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section class="section bg-light" id="experience">
+    <!-- Experience Section -->
+    <section class="section" id="experience">
       <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
+        <div class="section-header">
+          <span class="section-subtitle">CAREER PATH</span>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
 
-          <div class="timeline-item">
-            <div class="timeline-meta">
-              <h3>Senior Associate Consultant</h3>
-              <span class="company">Verinite Technologies Private Limited</span>
-              <span class="date">Jan 2022 – Present | Chennai, India</span>
+        <div class="timeline-wrapper">
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Associate Consultant</h3>
+                <span class="company-name"><i class="fa-regular fa-building"></i> Verinite Technologies Private Limited[cite: 1]</span>
+              </div>
+              <span class="timeline-tag">Jan 2022 – Present[cite: 1]</span>
             </div>
-            <div class="timeline-content">
-              <ul>
-                <li>Architected test plans for Functional, Regression, and Performance testing across banking and fintech platforms.</li>
-                <li>Built automated suites with Selenium, REST Assured, and WinApp Driver—reducing manual effort by 85% and regression cycles from 5 days to 2 days.</li>
-                <li>Led API Testing, System Integration Testing (SIT), and backend workflow validation for high-traffic loan-processing applications.</li>
-                <li>Mentored junior QA engineers on framework standards, design patterns, and code reviews.</li>
-              </ul>
-            </div>
+            <ul class="experience-bullets">
+              <li>Designed and executed test strategies across banking and fintech loan-processing platforms[cite: 1].</li>
+              <li>Built automation frameworks via Selenium, REST Assured, and WinApp Driver, cutting manual effort by 85% and regression cycles from 5 to 2 days[cite: 1].</li>
+              <li>Handled API Testing, SIT, and backend service verification using AWS Step Functions and SSM Parameters[cite: 1].</li>
+              <li>Mentored junior QA engineers on code reviews, POM architecture, and continuous integration gates[cite: 1].</li>
+            </ul>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-meta">
-              <h3>Associate Engineer</h3>
-              <span class="company">Company Name</span>
-              <span class="date">Sep 2018 – Dec 2021 | Chennai, India</span>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Associate Engineer</h3>
+                <span class="company-name"><i class="fa-regular fa-building"></i> Company Name[cite: 1]</span>
+              </div>
+              <span class="timeline-tag">Sep 2018 – Dec 2021[cite: 1]</span>
             </div>
-            <div class="timeline-content">
-              <ul>
-                <li>Executed Functional, Integration, and Regression test suites for custom-order processing and real-time inventory systems.</li>
-                <li>Built automated test suites using Selenium WebDriver and REST Assured integrated into Jenkins CI/CD pipelines.</li>
-                <li>Collaborated across teams to triage production defects and improve overall platform stability.</li>
-              </ul>
-            </div>
+            <ul class="experience-bullets">
+              <li>Executed Functional, Integration, and Regression testing for custom manufacturing and order tracking workflows[cite: 1].</li>
+              <li>Built automated test suites using Selenium WebDriver & REST Assured integrated into Jenkins pipelines[cite: 1].</li>
+              <li>Conducted root-cause defect analysis alongside cross-functional development teams[cite: 1].</li>
+            </ul>
           </div>
-
         </div>
       </div>
     </section>
@@ -136,118 +181,133 @@
     <!-- Featured Projects Section -->
     <section class="section" id="projects">
       <div class="container">
-        <h2 class="section-title">Featured Projects & Contributions</h2>
+        <div class="section-header">
+          <span class="section-subtitle">CASE STUDIES</span>
+          <h2 class="section-title">High-Impact Projects</h2>
+        </div>
+
         <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="project-header">
-              <span class="project-tag">Fintech / Banking</span>
-              <h3>CRED-CASH & DBS Integration</h3>
+          <div class="project-card glass-card">
+            <div class="project-top">
+              <span class="domain-tag">Fintech</span>
+              <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
             </div>
-            <p>End-to-end testing of high-scale loan-processing workflows. Validated backend user-journey flows via AWS Step Functions and SSM Parameters, improving release testing turnaround by 86%.</p>
-            <div class="tech-tags">
-              <span>AWS Step Functions</span>
-              <span>REST Assured</span>
-              <span>Postman</span>
+            <h3>CRED-CASH & DBS Integration</h3>
+            <p>Led end-to-end testing for high-traffic loan-processing engines[cite: 1]. Validated user journeys and microservices via AWS Step Functions and SSM Parameters, accelerating releases by 86%[cite: 1].</p>
+            <div class="project-footer">
+              <span>AWS</span><span>REST Assured</span><span>Postman</span>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-header">
-              <span class="project-tag">Cloud QA</span>
-              <h3>Cross-Platform Mobile Testing</h3>
+          <div class="project-card glass-card">
+            <div class="project-top">
+              <span class="domain-tag">Cloud QA</span>
+              <div class="project-icon"><i class="fa-solid fa-mobile-screen"></i></div>
             </div>
-            <p>Executed automated compatibility and performance validation across 15+ Android and iOS device combinations using LambdaTest cloud infrastructure.</p>
-            <div class="tech-tags">
-              <span>LambdaTest</span>
-              <span>Mobile Testing</span>
-              <span>Cloud Automation</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <span class="project-tag">Microservices</span>
-              <h3>Verification Micro Service (VMS)</h3>
-            </div>
-            <p>Contributed to the development, integration testing, and front-end UI flow for a distributed verification microservice connected across banking platforms.</p>
-            <div class="tech-tags">
-              <span>Microservices</span>
-              <span>API Integration</span>
-              <span>Design Studio</span>
+            <h3>Cross-Platform Mobile Testing</h3>
+            <p>Executed automated compatibility, UI, and performance validation across 15+ Android and iOS hardware/OS configurations via LambdaTest cloud automation[cite: 1].</p>
+            <div class="project-footer">
+              <span>LambdaTest</span><span>Mobile</span><span>Cloud</span>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-header">
-              <span class="project-tag">Desktop QA</span>
-              <h3>KMBL Desktop Automation</h3>
+          <div class="project-card glass-card">
+            <div class="project-top">
+              <span class="domain-tag">Microservices</span>
+              <div class="project-icon"><i class="fa-solid fa-diagram-project"></i></div>
             </div>
-            <p>Automated legacy desktop-application processes using WinApp Driver and Java, reducing manual testing overhead by 75%.</p>
-            <div class="tech-tags">
-              <span>WinApp Driver</span>
-              <span>Java</span>
-              <span>Desktop Automation</span>
+            <h3>Verification Micro Service (VMS)</h3>
+            <p>Validated backend integration for distributed identity verification workflows across core banking platforms while developing UI flows using Design Studio[cite: 1].</p>
+            <div class="project-footer">
+              <span>Microservices</span><span>APIs</span><span>Design Studio</span>
             </div>
           </div>
 
+          <div class="project-card glass-card">
+            <div class="project-top">
+              <span class="domain-tag">Legacy Automation</span>
+              <div class="project-icon"><i class="fa-solid fa-desktop"></i></div>
+            </div>
+            <h3>KMBL Desktop Automation</h3>
+            <p>Engineered automated testing pipelines for legacy desktop enterprise software using WinApp Driver and Java, reducing manual testing time by 75%[cite: 1].</p>
+            <div class="project-footer">
+              <span>WinApp Driver</span><span>Java</span><span>JUnit</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications & Education Section -->
-    <section class="section bg-light" id="certifications">
+    <!-- Certifications & Education -->
+    <section class="section" id="certifications">
       <div class="container">
-        <h2 class="section-title">Credentials & Education</h2>
-        <div class="cert-edu-grid">
-          
-          <div class="cert-block">
-            <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
-            <ul class="cert-list">
-              <li><strong>Cloud Foundations - Advanced</strong> — Great Learning</li>
-              <li><strong>AWS for Beginners</strong> — Great Learning</li>
-              <li><strong>Docker - Intermediate Level</strong> — Great Learning</li>
-              <li><strong>Kafka Basics</strong> — Great Learning</li>
-              <li><strong>Basics of Machine Learning</strong> — Great Learning</li>
-              <li><strong>Prompt Engineering for ChatGPT</strong> — Great Learning</li>
-            </ul>
-          </div>
+        <div class="section-header">
+          <span class="section-subtitle">CREDENTIALS</span>
+          <h2 class="section-title">Certifications & Education</h2>
+        </div>
 
-          <div class="cert-block">
-            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-            <div class="edu-card">
-              <h4>Bachelor of Engineering (B.E.), Mechanical Engineering</h4>
-              <p class="company">Anna University</p>
-              <span class="date">Graduated 2018</span>
+        <div class="credentials-layout">
+          <div class="glass-card cert-container">
+            <h3><i class="fa-solid fa-certificate gradient-text"></i> Industry Certifications</h3>
+            <div class="cert-grid">
+              <div class="cert-item"><i class="fa-solid fa-check"></i> Cloud Foundations - Advanced[cite: 1]</div>
+              <div class="cert-item"><i class="fa-solid fa-check"></i> AWS for Beginners[cite: 1]</div>
+              <div class="cert-item"><i class="fa-solid fa-check"></i> Docker - Intermediate Level[cite: 1]</div>
+              <div class="cert-item"><i class="fa-solid fa-check"></i> Kafka Basics[cite: 1]</div>
+              <div class="cert-item"><i class="fa-solid fa-check"></i> Basics of Machine Learning[cite: 1]</div>
+              <div class="cert-item"><i class="fa-solid fa-check"></i> Prompt Engineering for ChatGPT[cite: 1]</div>
             </div>
           </div>
 
+          <div class="glass-card edu-container">
+            <h3><i class="fa-solid fa-graduation-cap gradient-text"></i> Education</h3>
+            <div class="edu-detail">
+              <h4>Bachelor of Engineering (B.E.)[cite: 1]</h4>
+              <p class="edu-school">Mechanical Engineering — Anna University[cite: 1]</p>
+              <span class="edu-year">Graduated 2018[cite: 1]</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-      <div class="container contact-container">
-        <h2 class="section-title">Connect & Collaborate</h2>
-        <p class="contact-desc">Open to SDET consulting, framework architecture discussions, and senior quality engineering roles.</p>
-        
-        <div class="contact-methods">
-          <a href="mailto:arvindkumar.d0001@gmail.com" class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span>arvindkumar.d0001@gmail.com</span>
-          </a>
-          <a href="tel:+917845008637" class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <span>+91-7845008637</span>
-          </a>
-          <a href="https://github.com/Arvindkumar028/Arvindkumar028" target="_blank" class="contact-item">
-            <i class="fa-brands fa-github"></i>
-            <span>github.com/Arvindkumar028</span>
-          </a>
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Chennai, India</span>
+      <div class="container contact-section">
+        <div class="glass-card contact-card">
+          <span class="section-subtitle">GET IN TOUCH</span>
+          <h2>Let's Build Quality-Driven Systems</h2>
+          <p class="contact-subtext">Have a project, framework discussion, or an open SDET consulting role? Reach out directly.</p>
+          
+          <div class="contact-links-grid">
+            <a href="mailto:arvindkumar.d0001@gmail.com" class="contact-badge"[cite: 1]>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="badge-title">Email</span>
+                <span class="badge-val">arvindkumar.d0001@gmail.com</span>[cite: 1]
+              </div>
+            </a>
+            <a href="tel:+917845008637" class="contact-badge"[cite: 1]>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span class="badge-title">Phone</span>
+                <span class="badge-val">+91-7845008637</span>[cite: 1]
+              </div>
+            </a>
+            <a href="https://github.com/Arvindkumar028" target="_blank" class="contact-badge">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <span class="badge-title">GitHub</span>
+                <span class="badge-val">github.com/Arvindkumar028</span>
+              </div>
+            </a>
+            <div class="contact-badge">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="badge-title">Location</span>
+                <span class="badge-val">Chennai, India</span>[cite: 1]
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -255,10 +315,31 @@
   </main>
 
   <footer>
-    <div class="container footer-content">
-      <p>&copy; 2026 Arvindkumar D. Built for GitHub Pages.</p>
+    <div class="container footer-layout">
+      <p>&copy; 2026 Arvindkumar D. Built for speed and performance.</p>
     </div>
   </footer>
 
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu on click
+          document.getElementById('navLinks').classList.remove('active');
+        }
+      });
+    });
+
+    // Mobile Hamburger Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
